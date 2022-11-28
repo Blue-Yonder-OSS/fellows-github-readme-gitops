@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": [
+      "es2018"
+    ],
+    "module": "CommonJS",
+    "target": "ES2018",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node", "mocha"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "strictFunctionTypes": true
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}

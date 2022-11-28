@@ -1,0 +1,26 @@
+{
+  "plat": {
+    "name": "Platform",
+    "products": {
+      "pillar-a": "Pillar A",
+      "pillar-b": "Pillar B",
+      "pillar-c": "Pillar C"
+    }
+  },
+  "product-segment-a": {
+    "name": "Product Segment A",
+    "products": {
+      "prod-1": "Product 1",
+      "prod-2": "Product 2",
+      "prod-3": "Product 3"
+    }
+  },
+  "product-segment-b": {
+    "name": "Product Segment B",
+    "products": {
+      "prod-1": "Product Happy",
+      "prod-2": "Product Grumpy",
+      "prod-3": "Product Sneazy"
+    }
+  }
+}

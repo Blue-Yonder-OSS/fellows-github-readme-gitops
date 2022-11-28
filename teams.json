@@ -1,0 +1,47 @@
+[
+    {
+        "namePrefix": "Highlander optimization",
+        "maintainers": [
+            "Patrice-Hemshall_ghub",
+            "Berry-Thorne_ghub",
+            "Vivianna-Menlove_ghub",
+            "Harshit-Avrashin_ghub",
+            "Shyam-Gorini_ghub",
+            "Hendrik-Teuber_ghub",
+            "Yule-Olsson_ghub",
+            "Nikolas-Wolke_ghub",
+            "Katee-Reineking_ghub",
+            "Hannes-McLaggan_ghub"
+        ]
+    },
+    {
+        "namePrefix": "Machine learning trainers",
+        "maintainers": [
+            "Berry-Thorne_ghub",
+            "Vinod-McBeth_ghub",
+            "Ming-Yao_ghub",
+            "Carlos-Lanzo_ghub"
+        ]
+    },
+    {
+        "namePrefix": "Process running",
+        "maintainers": [
+            "Jennifer-Vicks_ghub",
+            "Vlad-Ivanov_ghub",
+            "Sekhar-Vine_ghub",
+            "Gabriel-Lowell_ghub",
+            "John-Vite_ghub",
+            "Elena-May_ghub"
+        ]
+    },
+    {
+        "namePrefix": "Batch infra",
+        "maintainers": [
+            "Ling-Li_ghub",
+            "Christian-Bale_ghub",
+            "Greg-O'Toole_ghub",
+            "Duncan-Wixey_ghub",
+            "Jewel-Yandell_ghub"
+        ]
+    }
+]

@@ -1,0 +1,113 @@
+{
+  "name": "@by/github-common-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "nyc mocha -r ts-node/register -r ts-node/register/ -r ts-node/register/transpile-only -r source-map-support/register --recursive test/**/*.spec.ts",
+    "lint": "eslint '*/**/*.ts' --quiet --fix",
+    "validate-repo": "ts-node ./src/validate-repo.ts",
+    "validate-repo:watch": "ts-node-dev --respawn --transpile-only ./src/validate-repo.ts",
+    "create-teamset": "ts-node ./src/create-teamset.ts",
+    "create-teamset:watch": "ts-node-dev --respawn --transpile-only ./src/create-teamset.ts",
+    "sync-conf-teamset": "ts-node ./src/sync-conf-teamset.ts",
+    "sync-conf-teamset:watch": "ts-node-dev --respawn --transpile-only ./src/sync-conf-teamset.ts",
+    "preinstall": "npx force-resolutions"
+  },
+  "keywords": [
+    "GitHub"
+  ],
+  "author": "Gabriel Kohen",
+  "license": "ISC",
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@octokit/types": "^6.30.0",
+    "@types/chai": "^4.2.22",
+    "@types/chai-http": "^4.2.0",
+    "@types/deep-diff": "^1.0.1",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.6",
+    "@types/sinon": "^10.0.3",
+    "@types/sinon-chai": "^3.2.5",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.4",
+    "chai-subset": "^1.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-walmart": "^2.2.1",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-jsdoc": "^36.1.0",
+    "mocha": "^9.1.1",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2",
+    "sinon-chai": "^3.7.0",
+    "source-map-support": "^0.5.20",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typedoc": "^0.22.4",
+    "typescript": "^4.4.3"
+  },
+  "resolutions": {
+    "lodash": "4.17.21",
+    "y18n": "4.0.1",
+    "color-string": "1.5.5",
+    "path-parse": "1.0.7"
+  },
+  "mocha": {
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ],
+    "recursive": true
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "nyc": {
+    "extends": [
+      "@istanbuljs/nyc-config-typescript"
+    ],
+    "all": true,
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "exclude": [
+      "coverage",
+      "dist",
+      "docs",
+      "gulpfile.js",
+      "test"
+    ],
+    "check-coverage": true,
+    "statements": 100,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "cache": false
+  },
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-retry": "^3.0.9",
+    "@octokit/plugin-throttling": "^3.5.2",
+    "@octokit/rest": "^18.11.0",
+    "@types/chai-subset": "^1.3.3",
+    "@types/uuid": "^8.3.1",
+    "bottleneck": "^2.19.5",
+    "chai-http": "^0.2.0",
+    "commander": "^8.2.0",
+    "deep-diff": "^1.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "formidable": "^3.2.4",
+    "prettier": "^2.4.1",
+    "superagent": "^8.0.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  }
+}

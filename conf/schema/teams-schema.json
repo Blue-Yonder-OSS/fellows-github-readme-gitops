@@ -1,0 +1,28 @@
+{
+  "title": "JSON schema for Blue Yonder Teamsets",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/teamset"
+  },
+  "definitions": {
+    "teamset": {
+      "type": "object",
+      "required": [
+        "namePrefix", "maintainers"
+      ],
+      "properties": {
+        "namePrefix": {
+          "type": "string"
+        },
+        "maintainers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^([a-zA-Z][a-zA-Z0-9]+)-([a-zA-Z][a-zA-Z0-9]+)|-[a-zA-Z0-9]+_(ghub)|(Ghub)|(GHUB)$"
+          }
+        }
+      }
+    }
+  }
+}
